@@ -1,14 +1,14 @@
-! Title: Noums75 - Filtres complets (Twitch et YouTube)
-! Description: Complement Youtube + scriptlet Twitch VAFT (necessite userResourcesLocation).
+! Title: StreamClean uBO - YouTube et Twitch
+! Description: Filtres YouTube + règle VAFT Twitch (requiert userResourcesLocation)
 ! Homepage: https://github.com/Noums75/ublock-filtres
 ! Expires: 1 day
-! IMPORTANT: garder les listes officielles d'uBlock Origin actives.
-! IMPORTANT: ne pas installer cette liste EN PLUS des listes separees.
+! Conserver les listes officielles d'uBlock Origin activées.
+! Ne pas ajouter les listes séparées en doublon.
 !
-! === Twitch - exige la ressource JS Twitch dans userResourcesLocation ===
+! === Twitch : exige aussi la ressource VAFT ===
 twitch.tv##+js(twitch-videoad)
 !
-! === YouTube - publicites d'interface, pas de manipulation du lecteur video ===
+! === YouTube : emplacements publicitaires, pas la vidéo ===
 youtube.com###masthead-ad
 youtube.com##ytd-ad-slot-renderer
 youtube.com##ytd-display-ad-renderer

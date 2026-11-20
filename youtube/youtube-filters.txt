@@ -1,9 +1,9 @@
-! Title: Noums75 - YouTube (complement publicitaire, uBlock Origin)
-! Description: Masque certains emplacements publicitaires d'interface, sans modifier la lecture video.
+! Title: StreamClean uBO - YouTube
+! Description: Masquage d'emplacements publicitaires, sans interception vidéo
 ! Homepage: https://github.com/Noums75/ublock-filtres
 ! Expires: 1 day
-! NOTE: Les publicites video et l'anti-adblock sont geres par les listes officielles d'uBO.
-! NOTE: Ne pas bloquer googlevideo.com ou les requetes du lecteur.
+! Conserver les listes officielles uBlock Origin activées.
+! Ne pas installer en doublon avec filtres-complets.txt.
 youtube.com###masthead-ad
 youtube.com##ytd-ad-slot-renderer
 youtube.com##ytd-display-ad-renderer

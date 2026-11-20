@@ -1,6 +1,6 @@
-! Title: Noums75 — Twitch VAFT (scriptlet)
-! Description: Injecte le scriptlet twitch-videoad fourni via userResourcesLocation
+! Title: StreamClean uBO - Twitch
+! Description: Règle VAFT à utiliser avec la ressource externe userResourcesLocation
 ! Homepage: https://github.com/Noums75/ublock-filtres
 ! Expires: 1 day
-! IMPORTANT: n'a aucun effet sans configurer userResourcesLocation (voir README).
+! Ne pas installer en doublon avec filtres-complets.txt.
 twitch.tv##+js(twitch-videoad)
