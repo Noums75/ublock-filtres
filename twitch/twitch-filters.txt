@@ -1,0 +1,6 @@
+! Title: Noums75 — Twitch VAFT (scriptlet)
+! Description: Injecte le scriptlet twitch-videoad fourni via userResourcesLocation
+! Homepage: https://github.com/Noums75/ublock-filtres
+! Expires: 1 day
+! IMPORTANT: n'a aucun effet sans configurer userResourcesLocation (voir README).
+twitch.tv##+js(twitch-videoad)
