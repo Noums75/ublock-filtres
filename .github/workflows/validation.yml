@@ -1,0 +1,20 @@
+name: StreamClean uBO - Verification
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: VAFT
+        run: node scripts/check-vaft.mjs
+      - name: Filtres YouTube
+        run: node scripts/check-youtube.mjs
+      - name: Installation et liens
+        run: node scripts/check-install.mjs
