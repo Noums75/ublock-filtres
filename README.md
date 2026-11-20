@@ -1,6 +1,6 @@
 # ublock-filtres
 
-Filtres personnels pour **uBlock Origin (version complète)**, avec une variante corrigée du scriptlet **VAFT** de TwitchAdSolutions.
+Filtres personnels pour **uBlock Origin (version complète)** : scriptlet **VAFT** corrigé pour Twitch et liste complémentaire pour **YouTube**.
 
 ## Fichiers
 
@@ -9,7 +9,23 @@ Filtres personnels pour **uBlock Origin (version complète)**, avec une variante
 - [twitch/LICENSE-MIT.txt](twitch/LICENSE-MIT.txt) : licence et attribution du projet initial.
 - [scripts/check-vaft.mjs](scripts/check-vaft.mjs) : vérifications statiques et syntaxiques, utilisées par GitHub Actions.
 
-## Installation
+## YouTube
+
+- [youtube/youtube-filters.txt](youtube/youtube-filters.txt) : filtres complémentaires des emplacements publicitaires YouTube.
+- [youtube/youtube-interface-optionnel.txt](youtube/youtube-interface-optionnel.txt) : masquage facultatif des Shorts et des cartes de fin.
+- [youtube/README.md](youtube/README.md) : installation, limites et dépannage YouTube.
+- [filtres-complets.txt](filtres-complets.txt) : liste commune **Twitch + YouTube**, à utiliser à la place des listes séparées.
+- [scripts/check-youtube.mjs](scripts/check-youtube.mjs) : tests des règles et de leur cohérence.
+
+**YouTube :** conserver les listes officielles d'uBlock Origin actives et à jour (notamment `uBlock filters – Ads` et `uBlock filters – Quick fixes`). Les filtres de ce dépôt sont **complémentaires** et n'altèrent pas le lecteur vidéo. Tant que le dépôt est privé, copier les règles de [youtube-filters.txt](youtube/youtube-filters.txt) dans **Mes filtres**. Une fois le dépôt public, on peut importer l'URL :
+
+```text
+https://raw.githubusercontent.com/Noums75/ublock-filtres/main/youtube/youtube-filters.txt
+```
+
+Pour utiliser un seul lien Twitch + YouTube après publication, importer plutôt `filtres-complets.txt`, sans doubler les abonnements séparés. Twitch nécessite toujours sa ressource `userResourcesLocation` indiquée ci-dessous.
+
+## Installation Twitch
 
 **Important : ce dépôt est actuellement privé.** La configuration ci-dessous n'est utilisable avec l'URL `raw.githubusercontent.com` **qu'une fois le dépôt rendu public** (Paramètres du dépôt → Général → Zone de danger → Modifier la visibilité). N'utilisez pas de jeton GitHub personnel dans `userResourcesLocation`. Le changement de visibilité doit être décidé par le propriétaire du dépôt.
 

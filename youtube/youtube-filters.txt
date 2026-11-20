@@ -1,0 +1,15 @@
+! Title: Noums75 - YouTube (complement publicitaire, uBlock Origin)
+! Description: Masque certains emplacements publicitaires d'interface, sans modifier la lecture video.
+! Homepage: https://github.com/Noums75/ublock-filtres
+! Expires: 1 day
+! NOTE: Les publicites video et l'anti-adblock sont geres par les listes officielles d'uBO.
+! NOTE: Ne pas bloquer googlevideo.com ou les requetes du lecteur.
+youtube.com###masthead-ad
+youtube.com##ytd-ad-slot-renderer
+youtube.com##ytd-display-ad-renderer
+youtube.com##ytd-promoted-video-renderer
+youtube.com##ytd-promoted-sparkles-web-renderer
+youtube.com##ytd-video-masthead-ad-v3-renderer
+youtube.com##ytd-action-companion-ad-renderer
+youtube.com##ytd-in-feed-ad-layout-renderer
+m.youtube.com##ytm-promoted-video-renderer

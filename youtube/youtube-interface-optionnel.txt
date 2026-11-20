@@ -1,0 +1,8 @@
+! Title: Noums75 - YouTube (optionnel : Shorts / fin de video)
+! Description: Preferences d'interface, sans effet sur les publicites video.
+! Homepage: https://github.com/Noums75/ublock-filtres
+! Expires: 7 days
+! OPTIONAL: ne pas ajouter si vous souhaitez voir les Shorts et suggestions de fin.
+youtube.com##ytd-reel-shelf-renderer
+youtube.com##ytd-rich-shelf-renderer[is-shorts]
+youtube.com##.ytp-ce-element
