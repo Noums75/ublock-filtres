@@ -16,5 +16,7 @@ jobs:
         run: node scripts/check-vaft.mjs
       - name: Filtres YouTube
         run: node scripts/check-youtube.mjs
+      - name: Comportement réseau VAFT
+        run: node scripts/check-runtime.mjs
       - name: Installation et liens
         run: node scripts/check-install.mjs

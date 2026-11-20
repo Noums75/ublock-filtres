@@ -26,6 +26,10 @@ L'abonnement ci-dessus ajoute la règle Twitch. Pour activer le script expérime
 
 ⚠️ **VAFT est expérimental.** Si Twitch affiche un écran noir ou une erreur, retire l'adresse de VAFT de **userResourcesLocation**, enregistre et recharge le site. Évite d'exécuter plusieurs scripts Twitch simultanément.
 
+Si le script ne s'active pas malgré cette configuration, ouvre **Mes filtres** et vérifie que la règle `twitch.tv##+js(twitch-videoad)` est présente et active (tu peux l'ajouter manuellement pour diagnostiquer). Après modification, applique les changements et recharge Twitch.
+
+**État des validations :** tests automatisés de syntaxe et simulation des requêtes réseau. **Aucun test de blocage en conditions réelles sur YouTube ou Twitch** n'a été effectué ; le site peut modifier ses mécanismes à tout moment.
+
 ## 🔗 Si le bouton d'installation ne fonctionne pas
 
 Ouvre **uBlock Origin → Listes de filtres → Importer**, colle ce lien et valide :
